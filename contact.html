@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact · Himalayan Haven Pokhara</title>
+  <meta name="description" content="Get in touch with Himalayan Haven — contact details, opening hours, location, frequently asked questions, and a booking enquiry form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/37836764/pexels-photo-37836764.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Blue rowboats on a calm lake at sunset with mountain backdrop" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <span class="eyebrow" style="color:var(--gold-light)">Contact</span>
+        <h1>Say hello</h1>
+        <p>Questions, booking enquiries, or just want to say hi — we'd love to hear from you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact info + form -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info card -->
+        <div class="contact-info-card reveal">
+          <h3>Get in Touch</h3>
+          <ul class="contact-info-list">
+            <li>
+              <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span class="label">Address</span><span class="value">Lakeside, Pokhara 33700, Nepal</span></span>
+            </li>
+            <li>
+              <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <span><span class="label">Phone</span><span class="value">+977 98 0000 0000</span></span>
+            </li>
+            <li>
+              <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+              <span><span class="label">Email</span><span class="value">hello@himalayanhaven.com</span></span>
+            </li>
+            <li>
+              <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <span><span class="label">Reception</span><span class="value">Open 24/7</span></span>
+            </li>
+            <li>
+              <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg></span>
+              <span><span class="label">Café Hours</span><span class="value">7:00 AM – 10:00 PM</span></span>
+            </li>
+          </ul>
+          <div style="margin-top:var(--space-5)">
+            <button class="btn btn-gold btn-block" data-open-modal="booking">Book Your Stay</button>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-card reveal delay-1">
+          <h3>Send a Message</h3>
+          <p style="color:var(--charcoal-soft);margin-bottom:var(--space-4);font-size:0.95rem">Fill in the form and we'll get back to you within 24 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfName">Full Name</label>
+                <input type="text" class="form-control" id="cfName" name="name" required />
+                <div class="form-error">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="cfEmail">Email</label>
+                <input type="email" class="form-control" id="cfEmail" name="email" required />
+                <div class="form-error">Please enter a valid email.</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cfPhone">Phone</label>
+                <input type="tel" class="form-control" id="cfPhone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="cfSubject">Subject</label>
+                <select class="form-control" id="cfSubject" name="subject" required>
+                  <option value="">Select a subject</option>
+                  <option>Booking enquiry</option>
+                  <option>Room availability</option>
+                  <option>Café reservation</option>
+                  <option>General question</option>
+                  <option>Feedback</option>
+                </select>
+                <div class="form-error">Please choose a subject.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cfMessage">Message</label>
+              <textarea class="form-control" id="cfMessage" name="message" required placeholder="Tell us how we can help..."></textarea>
+              <div class="form-error">Please write a message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+          <div class="form-success" id="contactSuccess" style="display:none">
+            <h3 id="contactSuccessName">Thank you.</h3>
+            <p>Your message has been sent. We'll be in touch within 24 hours.</p>
+            <button class="btn btn-gold" onclick="document.getElementById('contactForm').reset();document.getElementById('contactForm').style.display='block';this.parentElement.style.display='none'">Send Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section style="background:var(--cream)">
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="eyebrow">Find Us</span>
+        <h2>Where we are</h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-info reveal">
+          <h3>Lakeside, Pokhara</h3>
+          <p class="lead">We're on a quiet lane just off the main Lakeside promenade — a five-minute walk to the lake, and a ten-minute taxi from Pokhara Airport.</p>
+          <ul>
+            <li><span>Phewa Lake</span><span>5 min walk</span></li>
+            <li><span>Pokhara Airport (PKR)</span><span>10 min drive</span></li>
+            <li><span>Tourist Bus Park</span><span>15 min drive</span></li>
+            <li><span>Kathmandu to Pokhara</span><span>25 min flight / 6–7 hrs by road</span></li>
+            <li><span>Sarangkot sunrise</span><span>30 min drive</span></li>
+          </ul>
+        </div>
+        <div class="map-visual reveal delay-1">
+          <img src="https://images.pexels.com/photos/15534873/pexels-photo-15534873.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Aerial view of Phewa Lake and Pokhara cityscape" loading="lazy" />
+          <div class="map-pin">Himalayan Haven</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="eyebrow">Good to Know</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">What time is check-in and check-out? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Check-in is from 2:00 PM and check-out is by 11:00 AM. If you arrive early or need a late check-out, just let us know — we'll do our best to accommodate you.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is breakfast included? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Yes — a fresh breakfast is included with every room, served at our café from 7:00 AM to 10:00 AM. We use locally sourced produce and bake our bread daily.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you offer airport transfers? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>We can arrange a pick-up from Pokhara Airport or the Tourist Bus Park. Just share your arrival details when booking, and we'll have a car waiting.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is Wi-Fi available? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Yes, complimentary high-speed Wi-Fi is available throughout the hotel and café, in every room and all public areas.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can I request a mountain-view room? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Absolutely. Our Mountain View Suite has a private balcony with uninterrupted views of the Annapurna range. We'll always do our best to match you with the room you want — just mention it when you book.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can the café accommodate dietary requirements? <span class="faq-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
+          <div class="faq-answer"><p>Yes — we offer vegetarian, vegan, and gluten-free options across our menu. Let us know in advance and we'll make sure there's something delicious for you.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section class="cta-banner">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/35725246/pexels-photo-35725246.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Colorful wooden boats on Phewa Lake, Pokhara" loading="lazy" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="cta-banner-content reveal">
+        <span class="eyebrow" style="color:var(--gold-light)">Ready When You Are</span>
+        <h2>Your Pokhara escape starts here.</h2>
+        <p>Tell us when you'd like to visit, and we'll help you plan the perfect stay.</p>
+        <button class="btn btn-gold" data-open-modal="booking">Book Your Stay</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
